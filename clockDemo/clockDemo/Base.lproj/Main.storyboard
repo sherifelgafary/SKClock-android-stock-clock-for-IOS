@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="clockDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdN-C5-egd">
+                                <rect key="frame" x="95" y="85" width="131" height="30"/>
+                                <state key="normal" title="Print selected Date"/>
+                                <connections>
+                                    <action selector="printSelectedDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mKM-sr-Zea"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o93-a3-yYu">
+                                <rect key="frame" x="8" y="35" width="304" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qta-Cw-K6V">
+                                <rect key="frame" x="0.0" y="135" width="320" height="433"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LdN-C5-egd" firstAttribute="centerX" secondItem="o93-a3-yYu" secondAttribute="centerX" id="4tB-O7-JRj"/>
+                            <constraint firstItem="o93-a3-yYu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="8RG-p6-6R8"/>
+                            <constraint firstAttribute="trailing" secondItem="o93-a3-yYu" secondAttribute="trailing" constant="8" id="FI9-NN-C4h"/>
+                            <constraint firstItem="LdN-C5-egd" firstAttribute="top" secondItem="o93-a3-yYu" secondAttribute="bottom" constant="20" id="GRk-3F-LE5"/>
+                            <constraint firstItem="qta-Cw-K6V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ImR-hy-5OS"/>
+                            <constraint firstItem="qta-Cw-K6V" firstAttribute="top" secondItem="LdN-C5-egd" secondAttribute="bottom" constant="20" id="JKe-Yq-YMg"/>
+                            <constraint firstItem="o93-a3-yYu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="apt-Fs-T7d"/>
+                            <constraint firstAttribute="trailing" secondItem="qta-Cw-K6V" secondAttribute="trailing" id="dNR-Mr-Nub"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qta-Cw-K6V" secondAttribute="bottom" id="xPb-tM-63V"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="clockContainerView" destination="qta-Cw-K6V" id="gUz-O9-AoU"/>
+                        <outlet property="dateTextField" destination="o93-a3-yYu" id="0GX-6M-1Qd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="352"/>
+        </scene>
+    </scenes>
+</document>
