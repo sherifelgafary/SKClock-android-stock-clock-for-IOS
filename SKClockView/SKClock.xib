@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SKClock" customModule="clock_demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="395"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knk-yQ-ppV">
+                    <rect key="frame" x="24" y="20" width="35" height="35"/>
+                    <color key="backgroundColor" red="0.83921568627450982" green="0.8784313725490196" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="as6-Qg-WgO"/>
+                        <constraint firstAttribute="width" constant="35" id="tFU-fW-jwT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="AM">
+                        <color key="titleColor" red="0.27843137254901962" green="0.27450980392156865" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectAmTime:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wmx-kv-S9z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-m4-Yzy">
+                    <rect key="frame" x="259" y="15" width="35" height="35"/>
+                    <color key="backgroundColor" red="0.27843137254901962" green="0.27450980392156865" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="PM">
+                        <color key="titleColor" red="0.83921568627450982" green="0.8784313725490196" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectPmTime:" destination="iN0-l3-epB" eventType="touchUpInside" id="Tek-jD-q7T"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-eY-xPH">
+                    <rect key="frame" x="24" y="81" width="270" height="270"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skd-Gl-n6X">
+                            <rect key="frame" x="130" y="130" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.2784313725" green="0.27450980390000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="GF8-XL-oFP"/>
+                                <constraint firstAttribute="width" constant="10" id="VWg-k2-aw3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Skd-Gl-n6X" firstAttribute="centerY" secondItem="WpE-eY-xPH" secondAttribute="centerY" id="QAJ-tH-X1J"/>
+                        <constraint firstAttribute="width" secondItem="WpE-eY-xPH" secondAttribute="height" multiplier="1:1" id="Xkk-rp-9I1"/>
+                        <constraint firstItem="Skd-Gl-n6X" firstAttribute="centerX" secondItem="WpE-eY-xPH" secondAttribute="centerX" id="cfp-Sr-Vfu"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbc-nT-ZiA">
+                    <rect key="frame" x="111" y="12" width="39" height="52"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="33"/>
+                    <state key="normal" title="12">
+                        <color key="titleColor" red="0.2784313725" green="0.27450980390000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectHours:" destination="iN0-l3-epB" eventType="touchUpInside" id="eGg-gZ-Yrn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdN-P0-wA6">
+                    <rect key="frame" x="155" y="17" width="11" height="42"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                    <color key="textColor" red="0.2784313725" green="0.27450980390000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qId-Ym-QAU">
+                    <rect key="frame" x="171" y="12" width="47" height="52"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="33"/>
+                    <state key="normal" title="44">
+                        <color key="titleColor" red="0.2784313725" green="0.27450980390000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectMinutes:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zf2-JN-rAA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="NNg-m4-Yzy" firstAttribute="height" secondItem="knk-yQ-ppV" secondAttribute="height" id="0AZ-Xa-n6N"/>
+                <constraint firstItem="NNg-m4-Yzy" firstAttribute="width" secondItem="knk-yQ-ppV" secondAttribute="width" id="1jH-bU-Mbb"/>
+                <constraint firstItem="knk-yQ-ppV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Ahd-Rx-MNa"/>
+                <constraint firstItem="WpE-eY-xPH" firstAttribute="top" secondItem="knk-yQ-ppV" secondAttribute="bottom" constant="26" id="CXU-9K-7Mk"/>
+                <constraint firstItem="kdN-P0-wA6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="G33-JH-m8A"/>
+                <constraint firstItem="knk-yQ-ppV" firstAttribute="top" secondItem="NNg-m4-Yzy" secondAttribute="bottom" constant="-30" id="Ggq-pv-A4F"/>
+                <constraint firstAttribute="trailing" secondItem="NNg-m4-Yzy" secondAttribute="trailing" constant="26" id="LV6-fJ-kVj"/>
+                <constraint firstItem="qId-Ym-QAU" firstAttribute="leading" secondItem="kdN-P0-wA6" secondAttribute="trailing" constant="5" id="O8P-fe-dFP"/>
+                <constraint firstItem="kdN-P0-wA6" firstAttribute="centerY" secondItem="knk-yQ-ppV" secondAttribute="centerY" id="Wg2-71-rPc"/>
+                <constraint firstItem="WpE-eY-xPH" firstAttribute="leading" secondItem="knk-yQ-ppV" secondAttribute="leading" id="aza-PT-RCs"/>
+                <constraint firstItem="WpE-eY-xPH" firstAttribute="trailing" secondItem="NNg-m4-Yzy" secondAttribute="trailing" id="bdC-eH-jfU"/>
+                <constraint firstItem="Tbc-nT-ZiA" firstAttribute="centerY" secondItem="kdN-P0-wA6" secondAttribute="centerY" id="iG7-BG-iyV"/>
+                <constraint firstItem="knk-yQ-ppV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="jaa-SC-5dP"/>
+                <constraint firstItem="qId-Ym-QAU" firstAttribute="centerY" secondItem="kdN-P0-wA6" secondAttribute="centerY" id="lAa-uO-2Ou"/>
+                <constraint firstItem="kdN-P0-wA6" firstAttribute="leading" secondItem="Tbc-nT-ZiA" secondAttribute="trailing" constant="5" id="nOL-TG-5Hx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="amButton" destination="knk-yQ-ppV" id="6xK-CP-gb0"/>
+                <outlet property="clockAnchorPoint" destination="Skd-Gl-n6X" id="J8d-ya-dyE"/>
+                <outlet property="clockView" destination="WpE-eY-xPH" id="egA-07-opG"/>
+                <outlet property="hoursButton" destination="Tbc-nT-ZiA" id="G81-mc-gIs"/>
+                <outlet property="minutesButton" destination="qId-Ym-QAU" id="naV-Bz-rjK"/>
+                <outlet property="pmButton" destination="NNg-m4-Yzy" id="Rpx-QV-IPP"/>
+                <outlet property="timeSepratorLabel" destination="kdN-P0-wA6" id="qGy-WK-xxF"/>
+            </connections>
+            <point key="canvasLocation" x="-43" y="310.5"/>
+        </view>
+    </objects>
+</document>
