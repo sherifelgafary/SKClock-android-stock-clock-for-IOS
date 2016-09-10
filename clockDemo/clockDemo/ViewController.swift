@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    clock = NSBundle.mainBundle().loadNibNamed("SKClock", owner: self, options: nil)[0] as? SKClock
+        clock = NSBundle.mainBundle().loadNibNamed("SKClock", owner: self, options: nil)[0] as? SKClock
         clock.frame = clockContainerView.bounds
         clockContainerView.addSubview(clock)
         clock.startDate = "03:33 AM".getDate("hh:mm a")
