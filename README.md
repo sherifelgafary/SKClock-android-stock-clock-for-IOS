@@ -1,4 +1,7 @@
 # SKClock-android-stock-clock-for-IOS
+
+![simulator screen shot sep 11 2016 3 02 39 am](https://cloud.githubusercontent.com/assets/5552822/18414522/edab7986-77d4-11e6-8ba1-4b82dcf1294b.png)        ![simulator screen shot sep 11 2016 3 03 03 am](https://cloud.githubusercontent.com/assets/5552822/18414528/0800b29c-77d5-11e6-9cb1-ae7f5f16ac56.png)
+
 Have you ever wanted a new time picker for your app instead of the IOS default time picker SKClockView is customisable time picker which resembles the stock android clock picker and it's so easy to integrate and use in your project hope you enjoy using it and contact me for any improvements needed for this module
 
 ## Requirements
@@ -34,3 +37,12 @@ To use the SKClockView, instantiate it as you would instantiate SKClock object. 
         }
 
 ```
+
+you can get the selected date in the clock by invoking one of two functions :
+- getSelectedDate()
+ which will return an NSDate object with the selected time 
+
+- getSelecteStringdDate()
+ which will return a String object with the selected time in the hh:mm a format
+
+
