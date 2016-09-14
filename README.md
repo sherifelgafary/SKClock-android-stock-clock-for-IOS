@@ -1,7 +1,7 @@
 # SKClock-android-stock-clock-for-IOS
 
 
-![clock1](https://cloud.githubusercontent.com/assets/5552822/18533011/a169e406-7ae8-11e6-981b-88dd2d30ac70.gif)
+![clock2](https://cloud.githubusercontent.com/assets/5552822/18533258/54eee2c8-7aea-11e6-9d28-a2682a03e2f5.gif)
 
 Have you ever wanted a new time picker for your app instead of the IOS default time picker SKClockView is customisable time picker which resembles the stock android clock picker and it's so easy to integrate and use in your project hope you enjoy using it and contact me for any improvements needed for this module
 
