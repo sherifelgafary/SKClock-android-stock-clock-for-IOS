@@ -46,4 +46,4 @@ you can get the selected date in the clock by invoking one of two functions :
 - getSelecteStringdDate()
  which will return a String object with the selected time in the hh:mm a format
 
-
+- you can customize it's primaryColor, secondryColor, ClockBackGroundColor and give it a starting date
